@@ -11,8 +11,8 @@
 ## OSI 계층 단계
 
 - - -
-![img.png](img/img.png)
-![img_1.png](img/img_1.png)
+![img.png](img/OSI 7계층.png)
+![img_1.png](img/OSI 계층 데이터.png)
 
 ## 1계층 - 물리계층
 
