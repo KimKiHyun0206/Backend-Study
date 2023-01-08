@@ -1,10 +1,10 @@
 # selab-topic-warehouse
 
 ### Network
-- osi 7계층
-- OSI L4
-- DNS
-- REST API
+- ~~osi 7계층~~
+- ~~OSI L4~~
+- ~~DNS~~
+- ~~REST API~~
 - 로드밸런스
 - IP, TCP, UDP, HTTP
 - 라우터
