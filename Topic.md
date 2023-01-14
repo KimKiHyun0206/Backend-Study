@@ -5,8 +5,8 @@
 - ~~OSI L4~~
 - ~~DNS~~
 - ~~REST API~~
-- 로드밸런스
-- IP, TCP, UDP, HTTP
+- ~~로드밸런스~~
+- ~~IP, TCP, UDP, HTTP~~
 - 라우터
 - HTTP vs HTTPS
 - Cookie vs Session
