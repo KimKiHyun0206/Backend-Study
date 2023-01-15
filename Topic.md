@@ -7,8 +7,8 @@
 - ~~REST API~~
 - ~~로드밸런스~~
 - ~~IP, TCP, UDP, HTTP~~
-- 라우터
-- HTTP vs HTTPS
+- ~~라우터~~
+- ~~HTTP vs HTTPS~~
 - Cookie vs Session
 - http 1, 2, 3
 - cast (broadcast, unicast, multicast 등..)
