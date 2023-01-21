@@ -11,7 +11,7 @@
 - ~~HTTP vs HTTPS~~
 - ~~Cookie vs Session~~
 - http 1, 2, 3
-- cast (broadcast, unicast, multicast 등..)
+- ~~cast (broadcast, unicast, multicast 등..)~~
 - ipv4 vs ipv6
 - http status code
 
