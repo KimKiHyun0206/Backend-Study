@@ -13,7 +13,7 @@
 - ~~http 1, 2, 3~~
 - ~~cast (broadcast, unicast, multicast 등..)~~
 - ~~ipv4 vs ipv6~~
-- http status code
+- ~~http status code~~
 
 ### Database
 - DB Index
