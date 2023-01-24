@@ -16,7 +16,7 @@
 - ~~http status code~~
 
 ### Database
-- DB Index
+- ~~DB Index~~
 - Database Engine
 - Redis
 - RDB vs Nosql
