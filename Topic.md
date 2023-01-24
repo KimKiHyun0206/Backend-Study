@@ -81,7 +81,7 @@
 - GIT
 - Call By Value와 Call By Reference
 - Dto
-- 객체지향 vs 절차지향
+- ~~객체지향 vs 절차지향~~
 - sdk와 api
 - 개발자가 되고 싶은 이유
 - 좋은 개발자란 무엇일까요
