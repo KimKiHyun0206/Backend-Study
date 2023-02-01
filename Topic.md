@@ -17,7 +17,7 @@
 
 ### Database
 - ~~DB Index~~
-- Database Engine
+- ~~Database Engine~~
 - Redis
 - RDB vs Nosql
 - 트랜잭션
