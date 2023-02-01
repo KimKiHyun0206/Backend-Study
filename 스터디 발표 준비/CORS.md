@@ -1,5 +1,7 @@
 # CORS 성정 시 allowdOrigin 에러 해결 방법
 When allowCredentials is true, allowedOrigins cannot contain the special value "*" since that cannot be set on the "Access-Control-Allow-Origin" response header. To allow credentials to a set of origins, list them explicitly or consider using "allowedOriginPatterns" instead.
+
+
 [스프링 독스](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/cors/CorsConfiguration.html)
 ## 해결
     @Configuration
