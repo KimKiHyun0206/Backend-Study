@@ -18,8 +18,8 @@
 ### Database
 - ~~DB Index~~
 - ~~Database Engine~~
-- Redis
-- RDB vs Nosql
+- ~~Redis~~
+- ~~RDB~~~~vs Nosql~~
 - 트랜잭션
 - DDL, DML, DCL
 - sql injection
