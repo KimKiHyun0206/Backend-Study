@@ -20,7 +20,7 @@
 - ~~Database Engine~~
 - ~~Redis~~
 - ~~RDB~~~~vs Nosql~~
-- 트랜잭션
+- ~~트랜잭션~~
 - DDL, DML, DCL
 - sql injection
 - 정규화
