@@ -21,7 +21,7 @@
 - ~~Redis~~
 - ~~RDB~~~~vs Nosql~~
 - ~~트랜잭션~~
-- DDL, DML, DCL
+- ~~DDL, DML, DCL~~
 - sql injection
 - 정규화
 - db view
@@ -31,7 +31,7 @@
 
 ### Operate System
 - 멀티프로세스와 멀티스레드 차이
-- 교착상태
+- ~~교착상태~~
 - 세마포어와 뮤텍스
 - 동기 vs 비동기
 - concurrency vs parallelism
