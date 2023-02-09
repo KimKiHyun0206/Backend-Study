@@ -1,27 +1,27 @@
 # selab-topic-warehouse
 
 ### Network
-- osi 7계층
-- OSI L4
-- DNS
-- REST API
-- 로드밸런스
-- IP, TCP, UDP, HTTP
-- 라우터
-- HTTP vs HTTPS
-- Cookie vs Session
-- http 1, 2, 3
-- cast (broadcast, unicast, multicast 등..)
-- ipv4 vs ipv6
-- http status code
+- ~~osi 7계층~~
+- ~~OSI L4~~
+- ~~DNS~~
+- ~~REST API~~
+- ~~로드밸런스~~
+- ~~IP, TCP, UDP, HTTP~~
+- ~~라우터~~
+- ~~HTTP vs HTTPS~~
+- ~~Cookie vs Session~~
+- ~~http 1, 2, 3~~
+- ~~cast (broadcast, unicast, multicast 등..)~~
+- ~~ipv4 vs ipv6~~
+- ~~http status code~~
 
 ### Database
-- DB Index
-- Database Engine
-- Redis
-- RDB vs Nosql
-- 트랜잭션
-- DDL, DML, DCL
+- ~~DB Index~~
+- ~~Database Engine~~
+- ~~Redis~~
+- ~~RDB~~~~vs Nosql~~
+- ~~트랜잭션~~
+- ~~DDL, DML, DCL~~
 - sql injection
 - 정규화
 - db view
@@ -31,7 +31,7 @@
 
 ### Operate System
 - 멀티프로세스와 멀티스레드 차이
-- 교착상태
+- ~~교착상태~~
 - 세마포어와 뮤텍스
 - 동기 vs 비동기
 - concurrency vs parallelism
@@ -80,8 +80,8 @@
 ### Etc
 - GIT
 - Call By Value와 Call By Reference
-- Dto
-- 객체지향 vs 절차지향
+- ~~Dto~~
+- ~~객체지향 vs 절차지향~~
 - sdk와 api
 - 개발자가 되고 싶은 이유
 - 좋은 개발자란 무엇일까요
@@ -99,6 +99,6 @@
 - O() 표기법
 
 ### 디자인 패턴
-- 싱글톤 패턴
-- 상태 패턴
-- 프록시 패턴
+- ~~싱글톤 패턴~~
+- ~~상태 패턴~~
+- ~~프록시 패턴~~
