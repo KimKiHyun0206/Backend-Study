@@ -37,7 +37,7 @@
 - concurrency vs parallelism
 - 캐시
 - RAID
-- 스케줄링 기법
+- ~~스케줄링 기법~~
 - 커널
 - Critical Section
 - RAID
