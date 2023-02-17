@@ -202,4 +202,8 @@ public class WebConfig implements WebMvcConfigurer {
 * addAllowedMethod(String method) : 허가할 HTTP 메소드를 추가한다
   * @Overload : addAllowedMethod(HttpMethod method)
 
+<br>
+
+- - -
+* [CORS 스프링 독스](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/cors/CorsConfiguration.html)
 
