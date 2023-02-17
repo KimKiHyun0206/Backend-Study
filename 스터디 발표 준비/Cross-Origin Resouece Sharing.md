@@ -1,3 +1,28 @@
+# Origin
+> 서버의 위치를 의미하는 https://google.com 같은 URL들은 마치 하나의 문자열 같이 보여도 여러 개의 구성 요소로 이루어져 있다.
+
+| Protocol |      Host      |  Path  |   Query String   | Fragment |
+|:--------:|:--------------:|:------:|:----------------:|:--------:|
+| https:// | www.google.com | /users | ?sort=asc&page=1 |   #foo   |
+
+이때 출처는 Protocol과 Host 그리고 포트 번호를 모두 합친 것을 말한다
+```
+Origin = Protocol + Host + Port
+```
+
+출처 내의 포트 번호는 생략이 가능한데, 이는 각 웹에서 사용하는 프로토콜의 기본 포트 번호가 정해져있기 때문이다.
+
+<br>
+
+그러나 만약에 `https://google.com:123`과 같이 출처에 포트 번호가 명시적으로 포함되어 있으면 
+포트 번호까지 모두 일치해야 같은 출처라고 인정한다.
+
+# SOP, Same-Origin Policy
+> 같은 출처에서만 리소스를 공유할 수 있다
+
+하지만 웹은 다른 출처의 리소스를 무작정 막을 수도 없다. 따라서 몇가지 예외 조항을 두고 리소스의
+출처가 다르더라고 허용을 하기로 했는데 그것이 CORS이다.
+
 # Cross-Origin Resource Sharing, CORS
 
 _교차 출처 리소스 공유_
@@ -20,7 +45,6 @@ _교차 출처 리소스 공유_
 ```
 브라우저에서 Cross-Origin 요청을 안전하게 할 수 있도록 하는 메커니즘
 ```
-
 ## Cross-Origin
 
 1. **프로토콜** - `http`와 `https`는 프로토콜이 다르다
@@ -118,3 +142,64 @@ Content-Type이 다음과 같은 경우
 2. 브라우저가 서버에서 응답한 헤더를 보고 유효한 요청인지 확인한다
     1. 유요하지 않음 : 요청이 중단되고 에러가 발생
     2. 유효함 : 원래 요청으로 보내려던 요청을 다시 요청하여 리소스를 응답받는다
+
+# REST API 와 CORS
+> REST API의 리소스가 비 단순 Cross-Origin HTTP 요청을 받는 경우 CORS 지원을 활성화해야 한다
+
+## CORS 지원 활성화 여부 확인
+> Cross-Origin HTTP 요청은 다음에 의해 이루어지는 요청이다
+* 다른 도메인
+* 다른 하위 도메인
+* 다른 포트
+* 다른 프로토콜
+
+<br>
+
+Cross-Origin HTTP 요청은 단순 요청과 비단순 요청의 두 가지 유형으로 나눌 수 있다
+
+## 단순 요청, Simple Requests
+* GET, HEAD, POST 요청만 허용하는 API 리소스에 대해 발행된 요청
+* POST 메소드의 경우 Origin 헤더를 포함해야 한다
+* 요청 페이로드 컨텐츠 유형이 다음과 같다
+  * text/plain
+  * multipart/form-data
+  * application/x-www-rulencoded
+* 요청에 사용자 지정 헤더가 없다
+
+<br>
+
+단순 Corss-Origin POST 메소드 요청의 경우 해당 리소스로부터 응답에 Access-Control-Allow-Origin 헤더가 포함되어야 한다.
+헤더의 키 값은 *(임의의 오리진)으로 설정되거나, 해당 리소스에 대한 액세스가 허용되는 오리진으로 설정된다.
+
+<br>
+
+다른 모든 Cross-Origin HTTP 요청은 비단순 요청이다.
+API 리소스에서 비 단순 요청을 수신하는 경우 CORS 지원을 활성화해야 한다.
+
+```java
+@Configuration
+@RequiredArgsConstructor
+public class WebConfig implements WebMvcConfigurer {
+    @Bean
+    public UrlBasedCorsConfigurationSource corsConfigurationSource() {
+        var corsConfig = new CorsConfiguration();
+
+        corsConfig.addAllowedOriginPattern(CorsConfiguration.ALL);
+        corsConfig.addAllowedHeader(CorsConfiguration.ALL);
+        corsConfig.addAllowedMethod(CorsConfiguration.ALL);
+
+        corsConfig.setAllowCredentials(true);
+        corsConfig.setMaxAge(3600L);
+
+        var corsConfigSource = new UrlBasedCorsConfigurationSource();
+        corsConfigSource.registerCorsConfiguration("/**", corsConfig);
+        return corsConfigSource;
+    }
+}
+```
+* addAllowedOriginPattern(String originPattern) : Origin을 추가한다
+* addAllowedHeader(String allowedHeader) : 허용할 실제 요청 헤더를 추가한다
+* addAllowedMethod(String method) : 허가할 HTTP 메소드를 추가한다
+  * @Overload : addAllowedMethod(HttpMethod method)
+
+
