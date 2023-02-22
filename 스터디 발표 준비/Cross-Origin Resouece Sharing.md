@@ -95,10 +95,11 @@ Content-Type이 다음과 같은 경우
 
 이 요청은 추가적으로 확인하지 않고 바로 본 요청을 보낸다
 
+<br>
 </details>
 
 1. 서버로 요청한다
-2. 서버의 응답이 왔을 때 브라우저가 요청한 Origin과 응답한 헤더 Access-Control-Request-Headers의 값을 비교하여 유요한 요청임녀 리소스를 응답한다
+2. 서버의 응답이 왔을 때 브라우저가 요청한 **Origin**과 응답한 헤더 **Access-Control-Request-Headers**의 값을 비교하여 유요한 요청이면 리소스를 응답한다
     1. 만약 유효하지 않은 요청이라면 브라우저에서 이를 막고 에러를 발생시킨다.
 
 ## preflight인 경우
