@@ -2,7 +2,7 @@
 
 > 서버의 위치를 의미하는 https://google.com 같은 URL들은 마치 하나의 문자열 같이 보여도 여러 개의 구성 요소로 이루어져 있다.
 
-| Protocol |      Host      |  Path  |   Query String   | Fragment |
+| **Protocol** |      **Host**      |  **Path**  |   **Query String**   | **Fragment** |
 |:--------:|:--------------:|:------:|:----------------:|:--------:|
 | https:// | www.google.com | /users | ?sort=asc&page=1 |   #foo   |
 
