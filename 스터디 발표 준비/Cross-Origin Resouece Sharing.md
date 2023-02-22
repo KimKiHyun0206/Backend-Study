@@ -152,6 +152,8 @@ Content-Type이 다음과 같은 경우
 
 > REST API의 리소스가 비 단순 Cross-Origin HTTP 요청을 받는 경우 CORS 지원을 활성화해야 한다
 
+<br>
+
 ## CORS 지원 활성화 여부 확인
 
 > Cross-Origin HTTP 요청은 다음에 의해 이루어지는 요청이다
@@ -165,15 +167,40 @@ Content-Type이 다음과 같은 경우
 
 Cross-Origin HTTP 요청은 단순 요청과 비단순 요청의 두 가지 유형으로 나눌 수 있다
 
+
+<br>
+
 ## 단순 요청, Simple Requests
 
-* GET, HEAD, POST 요청만 허용하는 API 리소스에 대해 발행된 요청
+* `GET`, `HEAD`, `POST` 요청만 허용하는 API 리소스에 대해 발행된 요청
 * POST 메소드의 경우 Origin 헤더를 포함해야 한다
 * 요청 페이로드 컨텐츠 유형이 다음과 같다
     * text/plain
     * multipart/form-data
     * application/x-www-rulencoded
 * 요청에 사용자 지정 헤더가 없다
+
+<br>
+
+### 페이로드
+
+> 사용에 있어서 전송되는 데이터
+
+* 전송의 근본적인 목적이 되는 데이터의 일부분
+* 그 데이터와 함께 전송되는 헤더와 메타데이터와 같은 데이터는 제외한다
+
+```json
+{
+  "status": "OK",
+  "data": {
+    "message": "Hello, world!"
+  }
+}
+```
+
+```
+여기서 message 부분이 클라이언트가 관심을 가지는 페이로드이다.
+```
 
 <br>
 
