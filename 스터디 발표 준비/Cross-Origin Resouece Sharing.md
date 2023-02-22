@@ -141,12 +141,12 @@ Content-Type이 다음과 같은 경우
 
 </details>
 
-1. Origin 헤더에 현재 요청하는 Origin과, Access-Control-Request-Method 헤더에 요청하는 HTTP method와
-   Access-Control-Request-Header 요청 시 사용할 헤더를 OPTIONS 메소드로 서버에 요청한다.
+1. Origin 헤더에 현재 요청하는 **Origin**과, **Access-Control-Request-Method** 헤더에 요청하는 **HTTP method**와
+   **Access-Control-Request-Header** 요청 시 사용할 헤더를 OPTIONS 메소드로 서버에 요청한다.
     1. 이때 내용물은 없고 헤더만 전송한다
 2. 브라우저가 서버에서 응답한 헤더를 보고 유효한 요청인지 확인한다
-    1. 유요하지 않음 : 요청이 중단되고 에러가 발생
-    2. 유효함 : 원래 요청으로 보내려던 요청을 다시 요청하여 리소스를 응답받는다
+    1. `유요하지 않음` : 요청이 중단되고 에러가 발생
+    2. `유효함` : 원래 요청으로 보내려던 요청을 다시 요청하여 리소스를 응답받는다
 
 # REST API 와 CORS
 
@@ -165,8 +165,9 @@ Content-Type이 다음과 같은 경우
 
 <br>
 
+```
 Cross-Origin HTTP 요청은 단순 요청과 비단순 요청의 두 가지 유형으로 나눌 수 있다
-
+```
 
 <br>
 
