@@ -5,7 +5,6 @@
 * 그런 경우를 대비해서 Entity를 만드는 것이다
 ```java
 @Entity
-@AllArgsConstructor
 @Getter
 @Setter
 @Table(name="Member")
