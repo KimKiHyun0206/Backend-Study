@@ -33,14 +33,12 @@ public class Member {
 
 ## 영속선 컨텍스트, Persistence Context
 
-* 영속성 : 비휘발성
-* 컨텍스트 : 하나의 환경 또는 공간
+* **영속성** : 비휘발성
+* **컨텍스트** : 하나의 환경 또는 공간
 
 > 영속성 컨텍스트는 엔티티를 영구히 저장하는 환경이다.
 
-<br>
-
-* Persistence Context를 관리하는 모든 EntityManager가 초기화 및 종료되지 않는 한 엔티티를 영구히 저장하는 환경
+Persistence Context를 관리하는 모든 **EntityManager**가 초기화 및 종료되지 않는 한 엔티티를 영구히 저장하는 환경
 
 ## Entity 관리 방법
 
