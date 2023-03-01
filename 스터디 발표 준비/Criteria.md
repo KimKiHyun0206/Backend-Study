@@ -44,7 +44,7 @@ Persistence Context를 관리하는 모든 **EntityManager**가 초기화 및 �
 @RequiredArgsConstructor
 public class MemberService {
 
-    private final EntityManageFactory entityManagerFactory = Persistence.createEntityManagerFactory("persistence");
+    private final EntityManageFactory entityManagerFactory = Persistence.createEntityFactory("persistence");
 
     public void register(String name) {
         Member member = new Member(name);
