@@ -44,12 +44,12 @@ Persistence Context를 관리하는 모든 **EntityManager**가 초기화 및 �
 @RequiredArgsConstructor
 public class MemberService {
 
-    private final EntityManageService entityManageService;
+    private final EntityManageFactory entityManagerFactory = Persistence.createEntityManagerFactory("persistence");
 
     public void register(String name) {
         Member member = new Member(name);
 
-        EntityManager entityManager = entityManageService.getEntityManager();
+        EntityManager entityManager = entityManagerFactory.getEntityManager();
         EntityTransaction transaction = entityManager.getTransaction();
 
         try {
