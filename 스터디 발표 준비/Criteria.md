@@ -197,6 +197,7 @@ EntityManagerFactory는 META-INF/persistence.xml에 있는 정보를 바탕으�
 * 하지만 Criteria는 자바 코드 기반이기 때문에 안전하게 JPQL을 작성할 수 있다
 
 ```java
+
 @Setter
 @Getter
 class Member {
@@ -272,4 +273,136 @@ select member0_.member_id       as member_i1_6_,
        member0_.name            as name7_6_
 from member member0_ member's name: Name#1
 member's name: Name#2
+```
+
+# Not an Entity
+
+> Entity가 등록되지 않아서 발생하는 예외
+
+```java
+
+@Service
+public class Service {
+
+    @Transactional
+    public DiaryResponse get(Long id) {
+        EntityManager entityManager = entityManagerFactory.createEntityManager();
+        CriteriaBuilder criteriaBuilder = entityManager.getCriteriaBuilder();
+
+        CriteriaQuery<Diary> criteriaQuery = criteriaBuilder.createQuery(Diary.class);
+        Root<Diary> root = criteriaQuery.from(Diary.class);     //Error 발생
+
+        Predicate idEquals = criteriaBuilder.equal(root.get("id"), id);
+
+        criteriaQuery.select(root).where(idEquals);
+
+        Diary diary = entityManager.createQuery(criteriaQuery).getSingleResult();
+
+        return DiaryResponse.from(diary);
+    }
+}
+```
+
+### 해결 방법
+
+> Entity를 등록해준다
+
+```java
+@Entity
+public class Diary {
+    @Id
+    @Colume
+    private Long id;
+
+    @Column
+    private String title;
+}
+```
+
+이 방법으로 안 될 시 아래 방법을 이용한다
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2"
+             xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+    <!--  EntityManagerFactory 생성 시 사용되는 persistence name -->
+    <persistence-unit name="persistence">
+        <class>com.example.demo.entity.Diary</class>
+        <properties>
+            <!-- 필수 속성 -->
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="javax.persistence.jdbc.user" value="root"/>
+            <property name="javax.persistence.jdbc.password" value="kk020206**"/>
+            <property name="javax.persistence.jdbc.url"
+                      value="jdbc:mysql://localhost:3306/todo?characterEncoding=UTF-8&amp;serverTimezone=UTC"/>
+
+            <!-- 하이버네이트 사용 시 다른 DB에서 MySQL 문법을 사용 가능하도록 변경.-->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>
+            <!-- 콘솔에 SQL 출력 여부 -->
+            <property name="hibernate.show_sql" value="true"/>
+            <!-- 가독성 높여주는 formatting 여부 -->
+            <property name="hibernate.format_sql" value="true"/>
+            <!-- Comment 확인 여부 -->
+            <property name="hibernate.use_sql_comments" value="true"/>
+        </properties>
+    </persistence-unit>
+</persistence>
+```
+
+이렇게 XML에서 수동적으로 클래스를 등록해줄 수도 있다.
+
+# criteria by reflection for persistent property
+
+> Criteria를 사용할 때 변수형이 맞지 않아서 발생하는 예외
+
+```java
+
+@Entity
+@Table(name = "members")
+public class Member {
+    @Id
+    @Column
+    private Long id;
+
+    @Column
+    private String name;
+}
+```
+
+```java
+public interface MemberRepository extends JpaRepository<Member, Long> {
+}
+```
+
+JPA에서는 위와 같은 방식으로 테이블을 만든다. 이때 실제 DB에 저장되는 값과 코드 상의 변수형이 달라서 일어나는 예외이다.
+
+## MySQL의 자료형
+> 정수형
+* bit
+* bool
+* tinyint
+* smallint
+* mediumint
+* int
+* bigint
+
+<br>
+
+> 문자형
+* char
+* varchar
+* tinyblob
+* tinytext
+* blob
+* text
+* mediumblob
+* mediumtext
+* longblob
+* longtext
+* enum
+* set
+
+```
+Java의 자료형과는 확연히 다르다
 ```
