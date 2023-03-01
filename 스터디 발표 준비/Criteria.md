@@ -211,8 +211,8 @@ public class CriteriaSample {
         //Criteria 생성, 반환 타입 지정
         CriteriaQuery<Member> cq = cb.createQuery(Member.class);
 
-        Root<Member> m = cq.from(Member.class); //From clause
-        cq.select(m); //Select clause
+        Root<Member> m = cq.from(Member.class); //From clauss
+        cq.select(m); //Select clauss
 
         TypedQuery<Member> query = em.createQuery(cq);
         List<Member> members = query.getResultList();
