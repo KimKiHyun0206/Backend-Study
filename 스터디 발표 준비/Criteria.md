@@ -27,7 +27,7 @@ public class Member {
 
 * EntityManager 내부의 **Persistence Context**라는 것을 두어 Entity를 관리한다
 
-## 영속선 컨텍스트, Persistence Context
+## 영속성 컨텍스트, Persistence Context
 
 * **영속성** : 비휘발성
 * **컨텍스트** : 하나의 환경 또는 공간
