@@ -193,9 +193,8 @@ EntityManagerFactory는 META-INF/persistence.xml에 있는 정보를 바탕으�
 * 하지만 Criteria는 자바 코드 기반이기 때문에 안전하게 JPQL을 작성할 수 있다
 
 ```java
-
-@Setter
-@Getter
+@Entity
+@Data
 class Member {
     private String name;
     private Integer age;
