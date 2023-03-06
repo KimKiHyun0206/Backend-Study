@@ -61,7 +61,7 @@
 - 라이브러리 vs 프레임워크
 
 ### Java
-- 접근제한자, 생성자, SOLID
+- ~~접근제한자, 생성자, SOLID~~
 - ~~Java Collection~~
 - Java의 Object
 - java 메모리 구조
