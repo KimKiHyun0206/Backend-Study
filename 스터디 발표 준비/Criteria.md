@@ -401,3 +401,11 @@ JPA에서는 위와 같은 방식으로 테이블을 만든다. 이때 실제 DB
 ```
 Java의 자료형과는 확연히 다르다
 ```
+
+# JpaSpecificationExecutor
+```java
+@Repository
+public interface DiaryRepository extends JpaRepository<Diary, Long>, JpaSpecificationExecutor<Diary> {
+}
+```
+이것을 적용하니까 Not Entity Found 에러가 해결되었다.
