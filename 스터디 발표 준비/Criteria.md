@@ -408,4 +408,4 @@ Java의 자료형과는 확연히 다르다
 public interface DiaryRepository extends JpaRepository<Diary, Long>, JpaSpecificationExecutor<Diary> {
 }
 ```
-이것을 적용하니까 Not Entity Found 에러가 해결되었다.
+이것을 적용하니까 Not Entity Found 및 criteria by reflection for persistent property 에러가 해결되었다.
