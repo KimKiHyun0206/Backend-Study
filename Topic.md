@@ -22,8 +22,8 @@
 - ~~RDB~~~~vs Nosql~~
 - ~~트랜잭션~~
 - ~~DDL, DML, DCL~~
-- sql injection
-- 정규화
+- ~~sql injection~~
+- ~~정규화~~
 - db view
 - rdbms vs nosql
 - 반정규화
