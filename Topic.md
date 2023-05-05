@@ -45,7 +45,7 @@
 - 표준 입력(STDIN), 표준 출력(STDOUT), 표준 에러(STDERR)
 
 ### Spring
-- IOC, DI, AOP
+- ~~IOC, DI, AOP~~
 - bean vs component
 - 스프링의 동작 과정
 - 스프링 컨테이너
