@@ -24,7 +24,7 @@
 - ~~DDL, DML, DCL~~
 - ~~sql injection~~
 - ~~정규화~~
-- db view
+- ~~db view~~
 - rdbms vs nosql
 - 반정규화
 - mysql과 oracle의 차이점
