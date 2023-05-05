@@ -34,7 +34,7 @@
 - ~~교착상태~~
 - ~~세마포어와 뮤텍스~~
 - ~~동기 vs 비동기~~
-- concurrency vs parallelism
+- ~~concurrency vs parallelism~~
 - 캐시
 - RAID
 - ~~스케줄링 기법~~
