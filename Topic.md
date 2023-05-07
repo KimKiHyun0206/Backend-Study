@@ -63,7 +63,7 @@
 ### Java
 - ~~접근제한자, 생성자, SOLID~~
 - ~~Java Collection~~
-- Java의 Object
+- ~~Java의 Object~~
 - java 메모리 구조
 - checked exception vs unchecked exception
 - Jpa 더티체킹
