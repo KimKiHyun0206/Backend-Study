@@ -42,6 +42,8 @@
   * String, Lists, Sets, Sorted Sets, Hashes
 * Single Thread : 한 번에 한 명령만 처리할 수 있다
   * 긴 명령어가 들어오면 뒤의 명령어는 대기가 필요하다
+* 사용자 명령어를 처리하는 부분은 싱글 스레드로 동작한다
+* 명령어를 실행하는 코어 부분은 싱글 스레드이며 IO Socket Read/Write를 할 때 멀티 스레드로 동작한다
 
 <br>
 
