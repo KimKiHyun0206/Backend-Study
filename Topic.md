@@ -28,6 +28,16 @@
 - rdbms vs nosql
 - 반정규화
 - mysql과 oracle의 차이점
+- Redis
+* Redis Replication
+* Redis Cluster
+* Redis Sentinel
+* Redis Topology
+* Redis Sharing
+* Redis Failover
+* Redis Centinal
+* Look aside Cache
+* Write Back Cache
 
 ### Operate System
 - ~~멀티프로세스와 멀티스레드 차이~~
@@ -36,7 +46,6 @@
 - ~~동기 vs 비동기~~
 - ~~concurrency vs parallelism~~
 - 캐시
-- RAID
 - ~~스케줄링 기법~~
 - 커널
 - ~~Critical Section~~
@@ -91,12 +100,19 @@
 - 이루고 싶은 목표
 
 ### Algorithm
-- 정렬
 - 시간 복잡도, 공간 복잠도
 - 이진 탐색
 - tree
 - 동적 계획법 dp
 - O() 표기법
+- 그리디 알고리즘
+- 분할 정복 알고리즘
+- 다양한 표기법(최선, 평균, 최악)
+- 힙 정렬
+- 퀵 정렬
+- 선택 정렬
+- 쉘 정렬
+- 버블 정렬
 
 ### 디자인 패턴
 - ~~싱글톤 패턴~~
