@@ -35,7 +35,7 @@
 * Redis Topology
 * Redis Sharing
 * Redis Failover
-* Redis Centinal
+* Redis Sentinal
 * Look aside Cache
 * Write Back Cache
 
