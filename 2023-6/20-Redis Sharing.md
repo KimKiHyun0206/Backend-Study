@@ -125,7 +125,8 @@ public class HashSample {
 <br>
 
 ## Consistent Hashing
-> 데이터와 더불어 Master 서버에 대하여 동일한 해시 함수를 적용하고, 
+
+> 데이터와 더불어 Master 서버에 대하여 동일한 해시 함수를 적용하고,
 > Master 서버 해시값 구간에 해당되는 데이터를 저장한다
 
 
