@@ -1,4 +1,4 @@
-# Redis
+# Redis, REmote DIctionary Server
 
 * Key-Value 구조의 비정형 데이터 저장
 * 오픈 소스 기반
