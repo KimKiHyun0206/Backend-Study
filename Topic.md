@@ -29,13 +29,12 @@
 - 반정규화
 - mysql과 oracle의 차이점
 - Redis
-* Redis Replication
-* Redis Cluster
-* Redis Sentinel
-* Redis Topology
-* Redis Sharing
+* ~~Redis Replication~~
+* ~~Redis Cluster~~
+* ~~Redis Sentinel~~
+* ~~Redis Topology~~
+* ~~Redis Sharing~~
 * Redis Failover
-* Redis Sentinal
 * Look aside Cache
 * Write Back Cache
 
