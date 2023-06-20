@@ -51,6 +51,9 @@
 - RAID
 - 시스템 콜
 - 표준 입력(STDIN), 표준 출력(STDOUT), 표준 에러(STDERR)
+- Context Switching
+- Memory
+- Disk
 
 ### Spring
 - ~~IOC, DI, AOP~~
