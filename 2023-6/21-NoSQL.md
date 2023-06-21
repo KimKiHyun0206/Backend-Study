@@ -169,3 +169,8 @@ _Non Only SQL_ | _Non-Relational Operational Database_
 |   확장성    | * 확장성 용이<br/>* 온라인 중 노드 추가, 제거 시 자동으로 데이터가 재분배됨                                       | * 확장성 용이<br/>* 온라인 노드 추가, 제거 시 자동으로 데이터가 재분배됨                                                                                                            | * 확장성 용이<br/>* 온라인 중 노드 추가, 제거 시 자동으로 데이터가 재분뵈됨                                                                                                    |
 |   안정성    | * 안정성 높음                                                                              | * 안정성 높음                                                                                                                                                 | * 안정성 보통<br/>* Write 시 Database Lock 이 발생하여 서비스에 영향을 줄 수 있음                                                                                        |
 
+
+---
+* [NoSQL 이란?](https://www.oracle.com/kr/database/nosql/what-is-nosql/)
+* [다양한 NoSQL Database](https://www.samsungsds.com/kr/insights/1232564_4627.html)
+* [위키피디아](https://ko.wikipedia.org/wiki/NoSQL)
