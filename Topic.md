@@ -54,6 +54,7 @@
 - Context Switching
 - Memory
 - Disk
+- Local Cache
 
 ### Spring
 - ~~IOC, DI, AOP~~
@@ -100,6 +101,7 @@
 - 다른팀과 협업시 갈등이 있었을 때 어떤식으로 해결했는지
 - java와 c언어의 차이
 - 이루고 싶은 목표
+- Message Queue
 
 ### Algorithm
 - 시간 복잡도, 공간 복잠도
