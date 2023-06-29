@@ -40,14 +40,14 @@
 
 ![img.png](img/Spring-MVC-Pattern.png)
 
-1. Client로부터 요청이 들어오면 DispatcherServlet이 호출된다.
-2. DispatcherServlet은 받은 요청을 HandlerMapping에게 던져준다. 요청받은 URL을 분석하여 HandlerMapping 적합한 Controller를 선택하여 반환한다.
-3. DispatcherServlet는 다음으로 HandlerAdapter를 호출한다. HandlerApdater는 해당하는 Controller 중 요청한 URL에 맞는 적합한 Method를 찾아준다.
-4. Controller는 Business Logic을 처리하고, 해당하는 결과를 View에 전달할 객체를 Model에 저장한다.
-5. Controller는 View name을 DispatcherServlet에게 리턴한다.
-6. DispatcherServlet은 ViewResolver를 호출하여 Controller가 리턴한 View name을 기반으로 적합한 View를 찾아준다.
-7. DispatcherServlet은 View 객체에 처리결과를 넘겨 최종 결과를 보여주도록 요청한다.
-8. View 객체는 해당하는 View를 호출하며, View는 Model 객체에서 화면 표시에 필요한 객체를 가져와 화면 표시를 처리하고 Client에게 넘겨준다.
+1. Client 로부터 요청이 들어오면 DispatcherServlet 이 호출된다.
+2. DispatcherServlet 은 받은 요청을 HandlerMapping 에게 던져준다. 요청받은 URL 을 분석하여 HandlerMapping 적합한 Controller 를 선택하여 반환한다.
+3. DispatcherServlet 는 다음으로 HandlerAdapter 를 호출한다. Handler Adapter 는 해당하는 Controller 중 요청한 URL 에 맞는 적합한 Method 를 찾아준다.
+4. Controller 는 Business Logic 을 처리하고, 해당하는 결과를 View 에 전달할 객체를 Model 에 저장한다.
+5. Controller 는 View name 을 DispatcherServlet 에게 리턴한다.
+6. DispatcherServlet 은 ViewResolver 를 호출하여 Controller 가 리턴한 View name 을 기반으로 적합한 View 를 찾아준다.
+7. DispatcherServlet 은 View 객체에 처리결과를 넘겨 최종 결과를 보여주도록 요청한다.
+8. View 객체는 해당하는 View 를 호출하며, View 는 Model 객체에서 화면 표시에 필요한 객체를 가져와 화면 표시를 처리하고 Client 에게 넘겨준다.
 
 ## DispatcherServlet
 

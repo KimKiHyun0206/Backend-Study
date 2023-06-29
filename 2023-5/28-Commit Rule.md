@@ -1,12 +1,14 @@
 # 커밋 메시지
+
 * 커밋 메시지를 보고 어떤 작업을 했는지 알 수 있다면 더 좋을 것이다
 * create / fix / update / delete 등의 동사를 사용하면 더 깔끔하게 나타낼 수 있을 것이다
-  * create : commit rule
+    * create : commit rule
 * 그 외의 다른 방법도 직접 해보기도 하고 남이 커밋하는 방법을 보며 학습하는 것도 재밌을 것 같다
 
 <br>
 
 # 추가
+
 * refactor : 리펙토링
 * chore : 하기 싫은 잡일
 * 이모지 사용하기(이것도 예쁨)

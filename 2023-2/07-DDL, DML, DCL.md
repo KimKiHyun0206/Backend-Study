@@ -22,7 +22,7 @@ CREATE VIEW;
 CREATE USER;
 ```
 
-* alter : 테이블을 수정
+* `alter` : 테이블을 수정
 
 ```mysql
 //ColumnName으로 DataType인 행을 추가한다
@@ -38,7 +38,7 @@ ALTER TABLE TableName
     ALTER COLUMN ColumnName DataType;
 ```
 
-* drop : 데이터베이스, 테이블 삭제
+* `drop` : 데이터베이스, 테이블 삭제
 
 ```mysql
 DROP DATABASE Sample;
@@ -66,21 +66,21 @@ TRUNCATE TABLE TableName;
 
 정의된 데이터베이스에 입력된 레코드를 조회하거나 수정하거나 삭제하는 등의 역할을 한다
 
-* select : 조회
+* `select` : 조회
 
 ```mysql
 SELECT *
 FROM People;
 ```
 
-* inset : 삽입
+* `inset` : 삽입
 
 ```mysql
 INSERT INTO People
 VALUES ("김기현", 21);
 ```
 
-* update : 수정
+* `update` : 수정
 
 ```mysql
 UPDATE People
@@ -88,7 +88,7 @@ SET age = 22
 WHERE name = "김기현";
 ```
 
-* delete : 삭제
+* `delete` : 삭제
 
 ```mysql
 DELETE
@@ -105,7 +105,7 @@ WHERE name = "김기현";
 
 데이터베이스에 접근하거나 객체에 권한을 주는 등의 역할을 하는 언어
 
-* grant : 특정 사용자에게 특정 작업에 대한 수행 권한 부여
+* `grant` : 특정 사용자에게 특정 작업에 대한 수행 권한 부여
 
 ```mysql
 GRANT ALL PRIVILEGES ON DatabaseName.TableName TO userid@'%';
@@ -113,11 +113,11 @@ GRANT ALL PRIVILEGES ON DatabaseName.TableName TO userid@'%';
 GRANT SELECT, INSERT, UPDATE ON DatabaseName.TableName TO userif@'%' IDENTIFIED BY 'kk020206';
 ```
 
-* revoke : 특정 사용자에게 특정 작업에 대한 수행 권한을 회수
+* `revoke` : 특정 사용자에게 특정 작업에 대한 수행 권한을 회수
 
 ```mysql
 REVOKE ALL ON DatabaseName.TableName FROM userid@'%';
 ```
 
-* commit : 트랜잭션의 작업을 저장
-* rollback : 트랜잭션의 작업을 취소, 원래대로 복구
+* `commit` : 트랜잭션의 작업을 저장
+* `rollback` : 트랜잭션의 작업을 취소, 원래대로 복구

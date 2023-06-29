@@ -1,4 +1,5 @@
 # Rest
+
 _Representational State Transfer_
 > 자원의 표현으로 구분하여 해당 자원의 정보를 주고 받는 모든 것
 
@@ -6,19 +7,23 @@ _Representational State Transfer_
 * 자원의 표현 : 그 자원을 표현하기 위한 이름
 
 ## 장점
+
 * 서버와 클라이언트를 명확하게 분리한다
 * 여러가지 서비스 디자인에서 생길 수 있는 문제를 최소화할 수 있다
 
 ## 단점
+
 * 표준이 없다
 * HTTP Method가 제한적이기 때문에 사용하는 메소드가 4개 뿐이다
 
 ## 구성 요소
+
 * 자원 - URI
 * 행위 - HTTP Method
 * 표현 - Representation of Resource
 
 ## 특징
+
 * Server - Client 구조
 * StateLess(무상태)
 * Cacheable : 캐시 처리가 가능하다
@@ -27,18 +32,23 @@ _Representational State Transfer_
 * Uniform Interface : 인터페이스 일관성 - 특정 언어나 기술에 종속되지 않는다
 
 # REST API
+
 * API : 데이터와 기능의 집합을 제공하여 컴퓨터 프로그램간 상호작용을 촉진하며, 서로 정보를 교환가능 하도록 하는 것
 * REST API : REST를 기반으로 API를 만든 것
 
 ## 특징
+
 * 유지보수가 편리하다
 * 클라이언트-서버 구현 가능
 * 다양한 방법으로 클라이언트 개발 가능
 
 ## 설계 기본 규칙
+
 * 도큐먼트 : 객체 인스턴스나 데이터베이스 레코드와 비슷하다
 * 컬렉션 : 서버에서 관리하는 디렉터리라는 리소스
 * 스토어 : 클라이언트에서 관리하는 리소스 저장소
+
 - - -
+
 1. URI는 정보의 자원을 표현해야 한다
-2. 자원에 대한 행위는 HTTP Method로 표현한다
+2. 자원에 대한 행위는 HTTP Method 로 표현한다

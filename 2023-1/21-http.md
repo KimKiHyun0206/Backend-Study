@@ -5,9 +5,9 @@
 ### 특징
 
 * HTTP 헤더 개념이 도입되어 요청과 응답에 추가되며, 메타데이터를 주고 받고 프로토콜을 유연하고 확ㅈ아 가능하도록 개선되었다
-* 버전 정보와 요청 Method가 함께 전송되기 시작
+* 버전 정보와 요청 Method 가 함께 전송되기 시작
 * 상태 코드 라인도 응답의 시작부분에 추가되어 브라우저 오쳥의 성공과 실패를 파악 가능해진다
-* Content-Type의 도입으로 HTML 이외ㅡ이 문서 전송 기능이 가능해졌다
+* Content-Type 의 도입으로 HTML 이외ㅡ이 문서 전송 기능이 가능해졌다
 
 ### 한계
 
@@ -55,11 +55,11 @@
 
 ##### 개선
 
-* 구성된 연결 내에 전달되는 바이트의 양방향 흐름을 의미하는 Stream으로 요청
-* 메시지가 이진화된 텍스트 프레임으로 나뉘어 요청마다 구분되는 Stream을 통해 전달
+* 구성된 연결 내에 전달되는 바이트의 양방향 흐름을 의미하는 Stream 으로 요청
+* 메시지가 이진화된 텍스트 프레임으로 나뉘어 요청마다 구분되는 Stream 을 통해 전달
 * 프레임이 각 요청의 스트림을 통해 전달되며, 하나의 커넥션 안에 여러 개의 스트림을 가질 수 있게 되어 다중화가 가능해짐
     * 동시에 여러 요청을 처리할 수 있음
-    * Stream을 통해 각 쵸엉의 응답 순서가 의미가 없어짐 = HOL Blocking이 해결됨
+    * Stream을 통해 각 쵸엉의 응답 순서가 의미가 없어짐 = HOL Blocking 이 해결됨
 
 #### Stream Prioritization
 
@@ -68,27 +68,33 @@
 
 #### Server Push
 
-* 단일 클라이언트 요청에 여러 응답을 보낼 수 있는 특징을 통해 Server에서 Client에게 필요한 추가적 리소스를 push 해주는 기능
+* 단일 클라이언트 요청에 여러 응답을 보낼 수 있는 특징을 통해 Server 에서 Client 에게 필요한 추가적 리소스를 push 해주는 기능
 
 #### Header Compression
 
 * 기존 : 연속된 요청의 경우 많은 중복된 레더의 전송으로 오버헤드가 많이 발생함
 
 ##### 개선
+
 * 요청과 응답의 헤더 메타데이터응 압축해서 오버헤드 감소
-* 전송되는 헤더 필드를 static dynamic table로 서버에서 유지
+* 전송되는 헤더 필드를 static dynamic table 로 서버에서 유지
 * 이전에 표시된 헤더를 제외한 필드를 허프만 인코딩을 수행해서 데이터를 압축
 
 ### HTTP 2.0의 한계
-* 각 요청마다 Stream으로 구분해서 병렬적으로 처리하지만 결국 이에는 TCP 고유의 HOL Blocking이 존재
-* 서로 다른 Stream이 전송되고 있을 때, 하나의 Stream에서 유실이 발생되거나 문제가 생기면 결국 다른 Stream도 문제가 해결될 때까지 지연되는 현상이 발생하기 때문
-* 이러한 TCP의 태생적인 HOL Blocking을 해결하기 위해 HTTP 3이 등장
+
+* 각 요청마다 Stream 으로 구분해서 병렬적으로 처리하지만 결국 이에는 TCP 고유의 HOL Blocking 이 존재
+* 서로 다른 Stream 이 전송되고 있을 때, 하나의 Stream 에서 유실이 발생되거나 문제가 생기면 결국 다른 Stream 도 문제가 해결될 때까지 지연되는 현상이 발생하기 때문
+* 이러한 TCP 의 태생적인 HOL Blocking 을 해결하기 위해 HTTP 3이 등장
 
 # QUIC / HTTP 3.0
+
 ## QUIC?
+
 * 구글에서 개발한 UDP 기반의 전송 프로토콜 - Quick UDP Internet Connection
-* 구글에서 TCP의 구조적 문제로 성능 향상이 어렵다고 판단하여 UDP 기반을 선택
-* TCP의 3-way-handshake 과정을 회적화하는 것에 초점을 두고 개발됨
-* TCP의 Stream은 하나의 chain으로 연결되는 것과 다르게 각 Stream 당 독립된 Stream chain을 구성하여 TCP HOL Blocking을 해결
+* 구글에서 TCP 의 구조적 문제로 성능 향상이 어렵다고 판단하여 UDP 기반을 선택
+* TCP 의 3-way-handshake 과정을 회적화하는 것에 초점을 두고 개발됨
+* TCP 의 Stream 은 하나의 chain 으로 연결되는 것과 다르게 각 Stream 당 독립된 Stream chain 을 구성하여 TCP HOL Blocking 을 해결
+
 ## HTTP 3.0
-> QUIC을 기반으로 나온 새로운 HTTP 메이저 버전
+
+> QUIC 을 기반으로 나온 새로운 HTTP 메이저 버전

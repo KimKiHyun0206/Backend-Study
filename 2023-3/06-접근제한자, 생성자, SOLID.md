@@ -54,7 +54,9 @@ class People {
     }
 }
 ```
+
 위처럼 모든 변수에 값을 할당하는 방법도 있고 일부분만 값을 할당하여 만드는 방법도 있다.
+
 ```java
 class People {
     private String name;
@@ -63,18 +65,24 @@ class People {
     People(String name) {
         this.name = name;
     }
-    
-    People(){
+
+    People() {
     }
 }
 ```
+
 스프링에서는 생성자를 통해 의존성을 주입받는 방법이 있는데 이는 객체지향의 인스턴스 생성의 대표적인 예이다.
 
 # SOLID
+
 > 객체지향의 설계 원칙을 5가지로 분류해놓은 것
 
 ## SCP, 단일 책임 원칙
+
 ## OCP, 계방 폐쇄 원칙
+
 ## LSP, 리스코프 치환 원칙
+
 ## ISP, 인터페이스 단일 책임 원칙
+
 ## DIP, 의존성 역전 원칙

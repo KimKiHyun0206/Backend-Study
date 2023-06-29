@@ -3,7 +3,7 @@
 > 웹 프로그래밍에서 클라이언트 요청을 처리하고 처리 결과를 클라이언트에 전송하는 기술.
 > 자바로 구현된 CGI(Common Gateway Interface).
 
-* CGI : 별도로 제작된 서버와 프로그램 간의 교환 방식. HTML의 GET, POST 방법으로 클라이언트의 데이터를 환경변수로 전달하고 프로그램의 표준 출력 결과를 클라이언트에 전송하는 것
+* CGI : 별도로 제작된 서버와 프로그램 간의 교환 방식. HTML 의 GET, POST 방법으로 클라이언트의 데이터를 환경변수로 전달하고 프로그램의 표준 출력 결과를 클라이언트에 전송하는 것
 
 ```
 자바를 사용해서 웹을 만들기 위해 필요한 기술
@@ -12,12 +12,12 @@
 ### 특징
 
 * 클라이언트 요청에 대해 동적으로 작동하는 웹 어플리케이션 컴포넌트
-* HTML을 사용해서 요청에 응답한다
-* Java Thread를 통해 동작한다
-* MVC 패턴 중 Controller로 이용된다
+* HTML 을 사용해서 요청에 응답한다
+* Java Thread 를 통해 동작한다
+* MVC 패턴 중 Controller 로 이용된다
 * HTTP 프로토콜 서비스를 지원하는 `javax.servlet.http.HttpServlet` 클래스를 상속받는다
-    * UDP보다 속도가 느리다
-* HTML 변경시 Servlet을 재 컴파일 해야한다.
+    * UDP 보다 속도가 느리다
+* HTML 변경시 Servlet 을 다시 컴파일 해야한다.
 
 ```java
 // servlet-url로 요청이 오면 이게 실행된다.
@@ -71,7 +71,7 @@ username=kim&age=20
 
 <br>
 
-HttpServletRequest를 사용하면 위와 같은 HTTP 요청 메시지를 편리하게 조회할 수 있다
+`HttpServletRequest` 를 사용하면 위와 같은 HTTP 요청 메시지를 편리하게 조회할 수 있다
 
 ## 임시 저장소 긴으
 
