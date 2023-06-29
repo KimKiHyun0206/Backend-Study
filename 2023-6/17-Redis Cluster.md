@@ -42,7 +42,7 @@
 
 
 ---
-
-* [Cluster란?](https://server-talk.tistory.com/502)
+#### 🔗
+* [Cluster 란?](https://server-talk.tistory.com/502)
 * [Redis Cluster란?](https://co-de.tistory.com/24)
 * [실습](https://co-de.tistory.com/24)

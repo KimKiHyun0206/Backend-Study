@@ -171,6 +171,7 @@ _Non Only SQL_ | _Non-Relational Operational Database_
 
 
 ---
+#### 🔗
 * [NoSQL 이란?](https://www.oracle.com/kr/database/nosql/what-is-nosql/)
 * [다양한 NoSQL Database](https://www.samsungsds.com/kr/insights/1232564_4627.html)
 * [위키피디아](https://ko.wikipedia.org/wiki/NoSQL)
