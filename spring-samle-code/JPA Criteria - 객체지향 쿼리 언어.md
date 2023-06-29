@@ -1,9 +1,9 @@
 # Criteria
 
-> Criteria는 JPQL의 작성을 도와주는 빌더 클래스이다.
+> Criteria 는 JPQL 의 작성을 도와주는 빌더 클래스이다.
 
-* 문자열로 JPQL을 작성하면 런타임이 되어야 문법 오류를 알 수 있다
-* 하지만 Criteria는 자바 코드 기반이기 때문에 안전하게 JPQL을 작성할 수 있다
+* 문자열로 JPQL 을 작성하면 런타임이 되어야 문법 오류를 알 수 있다
+* 하지만 Criteria 는 자바 코드 기반이기 때문에 안전하게 JPQL 을 작성할 수 있다
 
 ```
 하지만 코드가 복잡해져서 직관적으로 이해하기 어려울 수도 있다
@@ -50,18 +50,18 @@ class GetSampleCode {
 }
 ```
 
-위의 자바 코드는 단순하게 Criteria 절을 이용하여 Member Entity를 모두 조회하는 코드이다
+위의 자바 코드는 단순하게 Criteria 절을 이용하여 Member Entity 를 모두 조회하는 코드이다
 
-1. CriteriaBuilder를 얻어서 Criteria를 사용할 준비를 마친다
-2. 빌더로 CriteriaQuery를 얻는다. 이때 반환형도 설정할 수 있다
-3. FROM 절을 생성한다. 반환한 m 값은 Criteria에서 사용하는 별칭이다
+1. CriteriaBuilder 를 얻어서 Criteria 를 사용할 준비를 마친다
+2. 빌더로 CriteriaQuery 를 얻는다. 이때 반환형도 설정할 수 있다
+3. FROM 절을 생성한다. 반환한 m 값은 Criteria 에서 사용하는 별칭이다
 4. SELECT 절을 생성한다
 
 <br>
 
 위의 과정을 거치면 JPQL 사용법과 같다.
 
-* createQuery로 TypedQuery를 얻어서 결과를 얻는다
+* createQuery 로 TypedQuery 를 얻어서 결과를 얻는다
 
 <br>
 
@@ -98,13 +98,15 @@ class WhereAndOrder {
     }
 }
 ```
-* FROM 절  ROOT<Member> 이후에 Where. order by 절을 생성해 주었다.
+
+* FROM 절 ROOT<Member> 이후에 Where. order by 절을 생성해 주었다.
 * m.get("name") 은 JPQL로 m.name 이라는 의미이다
 * cb.desc(m.get("id")) 는 JPQL로 m.id desc라고 볼 수 있다
 
 <br>
 
 이렇게 완성한 `Predicate`와 `Order`를 `where`과 `orderBy`에 넣어서 생성해준다
+
 * ROOT는 조회의 시작점
 * CriteriaQuery로 Root(from)을 얻는다
 * QueryBuilder로 Predicate(where) -> Order(order by)를 생성한다.
@@ -112,10 +114,11 @@ class WhereAndOrder {
 
 <br>
 
-## ID가 2 이상이면 이름을 역순으로 정렬하는 JQPL을 Criteria로 생성한다
+## ID가 2 이상이면 이름을 역순으로 정렬하는 JQPL 을 Criteria 로 생성한다
+
 ```java
 class Sample {
-    void sample(){
+    void sample() {
         Root<Member> m = cq.from(Member.class); //From clause
 
         //Where clause
@@ -139,7 +142,8 @@ class Sample {
     }
 }
 ```
-```
+
+```hiveql
 Hibernate: 
     /* select
         generatedAlias0 
