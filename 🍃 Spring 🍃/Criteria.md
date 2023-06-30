@@ -122,7 +122,7 @@ public class MemberService {
 
 <br>
 
-![img.png](../z-Image/imgs/EntityManagerFactory.png)
+![img.png](../⚠%20z-Image%20⚠/imgs/EntityManagerFactory.png)
 
 * EntityManagerFactory : 여러 스레드가 동시에 접근해도 안전하기 때문에 다른 스레드 간 공유해도 문제가 없다.
 * EntityManager : 여러 스레드가 동시에 접근하면 동시성 문제가 발생하기 때문에 스레드간 공유를 하면 안 된다

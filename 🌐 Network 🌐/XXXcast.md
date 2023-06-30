@@ -38,4 +38,4 @@
 * 하나의 Client 에서 여러 개의 멀티캐스트 주소를 수용할 수 있다 = 여러 가지 멀티캐스트 데이터를 동시에 받을 수 있다
 * Server 가 멀티캐스트 주소로 데이터를 전송 중에 있을 때 중간에 Client 가 끼어들으면 중간부터 데이터를 받게 된다
 
-![img.png](../z-Image/img1/cast.png)
+![img.png](../⚠%20z-Image%20⚠/img1/cast.png)

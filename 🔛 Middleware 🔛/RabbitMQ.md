@@ -7,12 +7,12 @@
 * 이는 `Client Application`과 `Middle Broker`와의 메시지를 주고 받기 위한 프로토콜이다
 
 > RabbitMQ 설명 이미지
-> ![img.png](../z-Image/img6/RabbitMQ%20설명%20이미지.png)
+> ![img.png](../⚠%20z-Image%20⚠/img6/RabbitMQ%20설명%20이미지.png)
 
 <br>
 
 MSA 구조의 서버를 사용하다 보면, 서버와 서버끼리 메시지를 주고 받아야 할 때가 있는데, 이때 RabbitMQ를 사용한다
-> ![img.png](../z-Image/img6/RabbitMQ와%20Server.png)
+> ![img.png](../⚠%20z-Image%20⚠/img6/RabbitMQ와%20Server.png)
 > `Server1`이 `Server2`에게 메시지를 보낼 때 RabbitMQ를 통해 메시지를 전송한다
 > * Producer : Server1
 > * Consumer : Server2
@@ -57,18 +57,18 @@ MSA 구조의 서버를 사용하다 보면, 서버와 서버끼리 메시지를
 
 > Exchange 와 Binding 된 모든 Queue 에게 동일한 메시지를 보낸다
 
-![img.png](../z-Image/img6/RabbitMQ-Fanout.png)
+![img.png](../⚠%20z-Image%20⚠/img6/RabbitMQ-Fanout.png)
 
 * 전체 메시지와 비슷하다
 
-![img.png](../z-Image/img6/RabbitMQ-Fanout.png)
+![img.png](../⚠%20z-Image%20⚠/img6/RabbitMQ-Fanout.png)
 
 ## Direct
 
 > **Routing Key를 활용하여 라우팅한다**
 
-![img.png](../z-Image/img6/RabbitMQ-DirectExample1.png)
-![img.png](../z-Image/img6/RabbitMQ-DirectExample2.png)
+![img.png](../⚠%20z-Image%20⚠/img6/RabbitMQ-DirectExample1.png)
+![img.png](../⚠%20z-Image%20⚠/img6/RabbitMQ-DirectExample2.png)
 
 * Exchange 에서 보낸 메시지를 Routing Key 를 통해 Queue 와 직접 Binding 할 수 있다
 * RabbitMQ 에서 사용되는 디폴트 Exchange 는 Direct 이다
@@ -82,7 +82,7 @@ MSA 구조의 서버를 사용하다 보면, 서버와 서버끼리 메시지를
 
 > **Routing Key 패턴이 일치하는 Queue 에게 메시지를 전달한다**
 
-![img.png](../z-Image/img6/RabbitMQ-TopicExample.png)
+![img.png](../⚠%20z-Image%20⚠/img6/RabbitMQ-TopicExample.png)
 
 * Direct 는 Routing Key 가 완전히 일치해야 메시지를 전달할 수 있는데
 * Topic 은 패턴을 정해서 Binding 규칙을 정의하기 때문에 Direct 방식 보다는 좀 더 유연하게 정의해서 메시지를 보낼 수 있다
@@ -106,7 +106,7 @@ MSA 구조의 서버를 사용하다 보면, 서버와 서버끼리 메시지를
 
 > Key-Value 로 정의된 헤더에 의해 메시지를 Queue 에 전달하는 방법
 
-![img.png](../z-Image/img6/RabbitMQ-HeaderExample.png)
+![img.png](../⚠%20z-Image%20⚠/img6/RabbitMQ-HeaderExample.png)
 
 > 헤더 형식
 

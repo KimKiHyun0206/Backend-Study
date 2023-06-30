@@ -4,7 +4,7 @@
 
 <div align="center">
 
-![img.png](../../z-Image/img6/캐시란.png)
+![img.png](../../⚠%20z-Image%20⚠/img6/캐시란.png)
 
 </div>
 
@@ -27,7 +27,7 @@
 > **데이터를 찾을 때 우선 캐시에서 데이터를 찾고 데이터가 있다면 캐시에서 데이터를 가져오는 전략**
 <div align="center">
 
-![img.png](../../z-Image/img6/Look-Aside.png)
+![img.png](../../⚠%20z-Image%20⚠/img6/Look-Aside.png)
 
 </div>
 
@@ -39,7 +39,7 @@
 
 <div align="center">
 
-![img.png](../../z-Image/img6/Cache%20Warming.png)
+![img.png](../../⚠%20z-Image%20⚠/img6/Cache%20Warming.png)
 
 </div>
 
@@ -51,7 +51,7 @@
 
 <div align="center">
 
-![img.png](../../z-Image/img6/Read%20Trough.png)
+![img.png](../../⚠%20z-Image%20⚠/img6/Read%20Trough.png)
 
 </div>
 
@@ -68,7 +68,7 @@
 
 <div align="center">
 
-![img.png](../../z-Image/img6/Write%20Through.png)
+![img.png](../../⚠%20z-Image%20⚠/img6/Write%20Through.png)
 
 </div>
 
@@ -89,7 +89,7 @@
 
 <div align="center">
 
-![img.png](../../z-Image/img6/Write%20Back.png)
+![img.png](../../⚠%20z-Image%20⚠/img6/Write%20Back.png)
 
 </div>
 
@@ -105,7 +105,7 @@
 
 <div align="center">
 
-![img.png](../../z-Image/img6/Write%20Around.png)
+![img.png](../../⚠%20z-Image%20⚠/img6/Write%20Around.png)
 
 </div>
 
@@ -113,11 +113,11 @@
 * 주로 Look Aside, Read Through 와 결합해서 사용된다
 
 > ### Write Around + Look Aside
-> ![img.png](../../z-Image/img6/Write%20Around%20+%20Look%20Aside.png)
+> ![img.png](../../⚠%20z-Image%20⚠/img6/Write%20Around%20+%20Look%20Aside.png)
 
 
 > ### Write Around + Read Througn
-> ![img.png](../../z-Image/img6/Write%20Around%20+%20Read%20Through.png)
+> ![img.png](../../⚠%20z-Image%20⚠/img6/Write%20Around%20+%20Read%20Through.png)
 
 ---
 * 6.24 복습

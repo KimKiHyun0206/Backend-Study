@@ -34,7 +34,7 @@
 * 연결형 서비스 : 응용 프로그램 ㅍ로세스는 TCP를 사용하여 데이터를 보낼 수 있는 상태가 되려면 먼저 연결을 설정해야 한다
 * 양방향 전송 :TCP 연결은 데이터를 양방향 전송 가능
 * 3way handshake
-  ![img.png](../z-Image/img1/3way%20handshake.png)
+  ![img.png](../⚠%20z-Image%20⚠/img1/3way%20handshake.png)
 
 # UDP, User Datagram Protocol
 
@@ -59,13 +59,13 @@
 * HTML 문서와 같은 리소스들을 가져올 수 있도록 해주는 프로토콜
 * 클라이언트-서버 프로토콜 : 수신자 측에 의해 요청이 초기화되는 프로토콜을 의미한다4
 
-![img.png](../z-Image/img1/HTTP.png)
+![img.png](../⚠%20z-Image%20⚠/img1/HTTP.png)
 클라이언트와 서버들은 개별적인 메시지 교환에 의해 통신한다
 
 * 요청 : 클라이언트에 의해 전송되는 메시지
 * 응답 : 서버가 클라이언트의 메시지에 응답으로 전송되는 메시지
 
-![img.png](../z-Image/img1/httpProxy.png)
+![img.png](../⚠%20z-Image%20⚠/img1/httpProxy.png)
 
 * 프록시 : 다양한 작업을 수행하는 데이트웨이 또는 캐시의 역할을 한다
 

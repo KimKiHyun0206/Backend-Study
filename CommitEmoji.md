@@ -7,6 +7,8 @@
 * 💬
 * 🍃 : Spring
 * 🌐 : Network
+* ⚙ : Operation System
+* ☕ : Java
 * 🔍 : 추가 탐색 필요
 * 💡 : Idea
 * 🔅 : Sun
