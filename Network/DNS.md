@@ -60,7 +60,7 @@
 
 - - -
 
-![img.png](img/DNS%20계층구조.png)
+![img.png](../z-Image/img1/DNS%20계층구조.png)
 
 * DNS는 전세계적인 거대한 분산 시스템이다
 * 도메인 네임 스페이스는 이러한 DNS가 저장 관리하는 계층적 구조를 의미한다
@@ -129,7 +129,7 @@
 ## DNS 동작 과정
 
 - - -
-![img_1.png](img/DNS%20동작%20과정.png)
+![img_1.png](../z-Image/img1/DNS%20동작%20과정.png)
 > #### DNS 쿼리란?
 > * DNS 클라이언트와 DNS 서버는 DNS 쿼리를 교환한다
 > * DNS 쿼리는 Recursive 또는 Iterative으로 구분된다

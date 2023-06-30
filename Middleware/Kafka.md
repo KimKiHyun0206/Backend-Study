@@ -8,7 +8,7 @@
 
 > Kafka 개발 전 Linked0In 데이터 처리 시스템
 
-![img.png](img/Kafka%20개발%20전%20링크드인의%20데이터%20처리%20시스템.png)
+![img.png](../z-Image/img6/Kafka%20개발%20전%20링크드인의%20데이터%20처리%20시스템.png)
 
 ## 기존 데이터 시스템의 문제점
 
@@ -37,7 +37,7 @@
 
 > Kafka 를 적용한 후 Linked-In 데이터 처리 시스템
 
-![img.png](img/Kafka%20적용%20후.png)
+![img.png](../z-Image/img6/Kafka%20적용%20후.png)
 
 * 모든 이벤트 | 데이터 흐름을 중앙에서 관리할 수 있게 됨
 * 새로운 서비스 | 시스템이 추가되도 카프카가 제공하는 표준 포멧으로 연결하면 되므로 확장성과 신뢰성이 증가
@@ -93,7 +93,7 @@
 
 > 비동기 메시징 전송 방식
 
-![img.png](img/Kafka-Pub-Sub%20모델.png)
+![img.png](../z-Image/img6/Kafka-Pub-Sub%20모델.png)
 
 * 발신자의 메시지에는 수신자가 정해져 있지 않은 상태로 Publish 한다
 * 이를 Subscribe(구독) 한 수신자만 정해진 메시지(Topic)을 받을 수 있다
@@ -114,7 +114,7 @@
 
 # Kafka 의 구성 요소
 
-![img.png](img/Kafka-구성%20요소.png)
+![img.png](../z-Image/img6/Kafka-구성%20요소.png)
 
 ### Topic
 
@@ -177,7 +177,7 @@
 
 ## 왜 하나의 Topic 을 여러 개의 Partition 으로 분산시키는가
 
-![img.png](img/Kafka-Topic%20Partition%20분산.png)
+![img.png](../z-Image/img6/Kafka-Topic%20Partition%20분산.png)
 
 * 병렬로 처리하기 위해 분산 저장한다
 * Kafka 의 Topic 에 메시지가 쓰여지는 것도 어느 정도 시간이 소비된다
@@ -193,7 +193,7 @@
 
 ## Consumer Group 은 왜 존재할까
 
-![img.png](img/Kafka-Consumer%20Group.png)
+![img.png](../z-Image/img6/Kafka-Consumer%20Group.png)
 
 * Consumer 의 묶음을 Consumer Group 이라고 한다
 * Consumer Group 은 하나가 Topic 에 대한 책임을 가지고 있다
