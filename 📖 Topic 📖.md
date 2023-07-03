@@ -48,7 +48,7 @@
 - ~~스케줄링 기법~~
 - 커널
 - ~~Critical Section~~
-- RAID
+- ~~RAID~~
 - 시스템 콜
 - 표준 입력(STDIN), 표준 출력(STDOUT), 표준 에러(STDERR)
 - Context Switching
