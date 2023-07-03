@@ -136,3 +136,7 @@
 ![img.png](../🔲%20Image%20🔲/Algorithm/RAID-RAID%200+1.png)
 ![img.png](../🔲%20Image%20🔲/Algorithm/RAID-RAID%201+0.png)
 ![img.png](../🔲%20Image%20🔲/Algorithm/RAID-Nested%20Raid.png)
+
+---
+### 링크
+* [🔗 RAID 의 개념과 레벨](https://devocean.sk.com/blog/techBoardDetail.do?ID=163608)
