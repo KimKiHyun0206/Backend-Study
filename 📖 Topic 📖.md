@@ -59,8 +59,8 @@
 ### Spring
 - ~~IOC, DI, AOP~~
 - ~~bean vs component~~
-- 스프링의 동작 과정
-- 스프링 컨테이너
+- ~~스프링의 동작 과정~~
+- ~~스프링 컨테이너~~
 - ~~spring servlet~~
 - spring vs EJB
 - ~~Spring MVC~~
