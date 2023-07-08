@@ -26,7 +26,7 @@
 - ~~정규화~~
 - ~~db view~~
 - ~~rdbms vs nosql~~
-- 반정규화
+- ~~반정규화~~
 - mysql과 oracle의 차이점
 - ~~Redis~~
 * ~~Redis Replication~~
@@ -37,6 +37,9 @@
 * ~~Redis Failover~~
 * ~~Look aside Cache~~
 * ~~Write Back Cache~~
+* Partition
+* 데이터베이스 관계
+* 
 
 ### Operate System
 - ~~멀티프로세스와 멀티스레드 차이~~
