@@ -27,7 +27,7 @@
 - ~~db view~~
 - ~~rdbms vs nosql~~
 - ~~반정규화~~
-- mysql과 oracle의 차이점
+- ~~mysql과 oracle의 차이점~~
 - ~~Redis~~
 * ~~Redis Replication~~
 * ~~Redis Cluster~~
