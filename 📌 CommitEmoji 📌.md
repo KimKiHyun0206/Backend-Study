@@ -12,7 +12,7 @@
 * 🔍 : 추가 탐색 필요
 * 💡 : Idea
 * 🔅 : Sun
-* 🔧 : Repair
+* 🔧 : 수정
 * 📈 : 상승
 * 📉 : 하락
 * 📄
@@ -40,14 +40,14 @@
 * ♻ : recycle
 * ❗ : heavy_exclamation_mark
 * ❌ : x
-* ➕ : heavy_plus_sign
-* ➖ : heavy_minus_sign
-* ✔ : heavy_check_mark
-* 💯 : 100
+* ➕ : 추가
+* ➖ : 삭제
+* ✔ : 복습
+* 💯 : 학습 완료
 * 🔗 : link
-* 🔵 : large_blue_circle
-* 🔴 : read_circle
-* ⚠️: warning
+* 🔵 : 공부 함
+* 🔴 : 휴식
+* ⚠️: 주의
 * 📖 : book
 * 📝 : memo
 * 📝 : pencil
