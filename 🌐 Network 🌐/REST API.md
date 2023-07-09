@@ -14,7 +14,7 @@ _Representational State Transfer_
 ## 단점
 
 * 표준이 없다
-* HTTP Method가 제한적이기 때문에 사용하는 메소드가 4개 뿐이다
+* HTTP Method 가 제한적이기 때문에 사용하는 메소드가 4개 뿐이다
 
 ## 구성 요소
 

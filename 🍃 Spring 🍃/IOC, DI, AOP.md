@@ -26,16 +26,16 @@ public class TaxService {
 
 > 밖에서 객체에게 의존성을 주입해주는 것
 
-* DI는 IOC의 일종이라고 생각할 수 있다
+* DI는 IOC 의 일종이라고 생각할 수 있다
 
 ### 주입 방법
 
 1. 스프링 IOC 컨테이너가 Bean 객체들을 관리한다
-    1. Bean들의 의존성을 관리한다
+    1. Bean 들의 의존성을 관리한다
     2. 객체를 만들어준다
-    3. Bean으로 등록해준다
-2. ApplicationContext 또는 BeanFactory를 사용하여 Bean을 사용한다
-3. 스프링에서 의존성 주입을 하려면 Bean으로 등록된 객체여야 한다
+    3. Bean 으로 등록해준다
+2. ApplicationContext 또는 BeanFactory 를 사용하여 Bean 을 사용한다
+3. 스프링에서 의존성 주입을 하려면 Bean 으로 등록된 객체여야 한다
     1. 뭔진 알아야 스프링이 넣어줄 것이다
     2. 어노테이션
 
@@ -61,14 +61,14 @@ public class BeanSample {
 
 * Aspect : 흩어진 관심사를 모듈화 한 것.
     * 주로 부가기능을 모듈화 한다
-* Target : Aspect를 적용한 곳.
+* Target : Aspect 를 적용한 곳.
     * 클래스, 메소드 등
 * Advice : 실질적으로 어떤 일을 해야할 지에 대한 것,
     * 실질적인 부가기능을 담은 구현제
-* JointPoint : Advice가 적용될 위치, 끼어들 수 없는 지점.
+* JointPoint : Advice 가 적용될 위치, 끼어들 수 없는 지점.
     * 메소드 호출 지점, 생성자 호출 지점, 필드에서 값을 꺼내올 때
-* Point Cut : JointPoint의 상세한 스펙을 정의한 것
-    * A란 메소드의 진입 시점에서 호출할 것과 같이 더욱 구체적으로 Advice가 실행될 지점 설정 가능
+* Point Cut : JointPoint 의 상세한 스펙을 정의한 것
+    * A란 메소드의 진입 시점에서 호출할 것과 같이 더욱 구체적으로 Advice 가 실행될 지점 설정 가능
 
 ## 특징
 
@@ -87,8 +87,8 @@ public class BeanSample {
 </dependency>
 ```
 
-* @Aspect 어노테이션을 붙여 이 클래스가 Aspect를 나타내는 클래스라는 것을 명시
-* @Component로 스프링 빈으로 등록
+* @Aspect 어노테이션을 붙여 이 클래스가 Aspect 를 나타내는 클래스라는 것을 명시
+* @Component 로 스프링 빈으로 등록
 
 ```java
 

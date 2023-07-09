@@ -1,6 +1,6 @@
 # Bean
 
-> Spring IOC Container가 관리하는 자바 객체
+> Spring IOC Container 가 관리하는 자바 객체
 
 ## 등록 방법
 
@@ -22,7 +22,7 @@ public class TaxService {
 
 <br>
 
-### Bean Configuration File에 직접 등록하는 방법
+### Bean Configuration File 에 직접 등록하는 방법
 
 ```java
 

@@ -100,7 +100,7 @@ public class HashSample {
 
 ## Rebalancing 문제
 
-> 만약 Hash Partitioning이 적용된 상황에서 데이터 용량이 더 커져 Master 서버를 추가해야 한다면,
+> 만약 Hash Partitioning 이 적용된 상황에서 데이터 용량이 더 커져 Master 서버를 추가해야 한다면,
 > 어떤 이슈가 존재할까
 
 #### 가정 1

@@ -19,7 +19,7 @@
 * Queue
 * Biding
 
-![img.png](../⚠%20z-Image%20⚠/img6/AMQP-RoutingModel.png)
+![img.png](../🔲%20Image%20🔲/리펙토링 이전의 이미지/img6/AMQP-RoutingModel.png)
 
 ### Exchange
 메시지 브로커에서 큐에세 메시지를 전달하는 역할

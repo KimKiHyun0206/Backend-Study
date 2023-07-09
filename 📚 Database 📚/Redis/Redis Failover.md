@@ -9,7 +9,7 @@
 * TIMEOUT 을 지정할 수 있다(단위는 milliseconds)
   * 지정한 시간동안 Failover 되지 않으면 롤백한다
 * Failover 시간이 오래 걸릴 경우 Failover Abort 로 취소할 수 있다
-* info replicaion 의 master_failover_state
+* info replication 의 master_failover_state
   * no-failover : 진행 중인 장애 조치(Failover)가 없다
   * waiting-for-sync : 마스터는 복제본이 데이터가 복제되기를 기다리고 있따
   * failover-in-progress : 마스터가 자신을 복제(replica)로 만들었고 복제본이 새 마스터가 되기를 기다리고 있다

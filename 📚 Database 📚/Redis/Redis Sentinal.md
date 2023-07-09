@@ -1,8 +1,8 @@
 # Sentinal?
 
-* Redis 는 Master와 Replica로 구성된다
-* 운영 중 예기치 않게 Master가 다운되면, 관리자가 이를 감지해서 Replica를 Master로 올리고 Client 들이 새로운 Master에 접속할 수 있도록 해주어야 한다
-* Sentinal은 Master와 Replica를 감시하고 있다가 Master가 다운되면 이를 감지해서 관리자의 개입 없이 자동으로 Replica를 Master로 올려준다
+* Redis 는 Master 와 Replica 로 구성된다
+* 운영 중 예기치 않게 Master 가 다운되면, 관리자가 이를 감지해서 Replica 를 Master 로 올리고 Client 들이 새로운 Master 에 접속할 수 있도록 해주어야 한다
+* Sentinal 은 Master 와 Replica 를 감시하고 있다가 Master 가 다운되면 이를 감지해서 관리자의 개입 없이 자동으로 Replica 를 Master 로 올려준다
 
 ## 기능
 
@@ -18,11 +18,11 @@ Sentinal 은 Redis Master 와 Replica 들이 제대로 동작하는지 지속적
 
 * Redis Master 가 예기치 않게 다운되었을 때 Replica 를 새로운 Master 로 승격시킨다
 * Replica 가 여러 대 있을 경우 이 Replica 들이 새로은 Master 로부터 데이터를 받을 수 있도록 재구성한다
-* 다운된 Master 가 재시작 했을 때 Replica로 전환되어 새로운 Master를 바로볼 수 있도록 한다
+* 다운된 Master 가 재시작 했을 때 Replica 로 전환되어 새로운 Master 를 바로볼 수 있도록 한다
 
 ### 알림, Notification
 
-감시하고 있는 Redis Instance 들이 Failover 되었을 때 Pub | Sub 으로 Client에 알리거나 Shell Script로 관리자에게 이메일이나 SMS로 알릴 수 있다
+감시하고 있는 Redis Instance 들이 Failover 되었을 때 Pub | Sub 으로 Client 에 알리거나 Shell Script 로 관리자에게 이메일이나 SMS 로 알릴 수 있다
 
 <br>
 

@@ -22,7 +22,7 @@
 스레드간의 공유도 LOCK으로 막는다
 ```
 
-# Critical Section Problem을 해결하기 위한 조건
+# Critical Section Problem 을 해결하기 위한 조건
 
 * 상호 배제 : 하나의 프로세스만 임계 영역에 들어갈 수 있다
 * 진행 : 빈 임계영역에 들어갈 프로세스를 선택하는 것을 미룰 수 없다

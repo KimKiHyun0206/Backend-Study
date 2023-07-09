@@ -19,7 +19,7 @@
 * CPU가 Single-Core에서 Multi-Core로 넘어간 이유는 성능의 한계 때문이다
     * 여러 코어에서 여러 작업을 수행하며 성능을 올리려 한 것
 
-![img.png](../⚠%20z-Image%20⚠/img4/MultiCore.png)
+![img.png](../🔲%20Image%20🔲/리펙토링 이전의 이미지/img4/MultiCore.png)
 
 * 위와 같은 경우 효율이 세 배까지 올라간다
 * 하지만 `Race Condition` 혹은 `동기화 문제`가 발생할 수 있다
@@ -30,7 +30,7 @@
 * 한 개의 코어에서도 여러 작업을 `Concurrent`하게 실행할 수 있다
 * 작업 간에는 `Context Switch`가 일어난다
 
-![img.png](../⚠%20z-Image%20⚠/img4/동시성.png)
+![img.png](../🔲%20Image%20🔲/리펙토링 이전의 이미지/img4/동시성.png)
 
 * 스케줄링 정책에 의해 실행
 * 서로 복잡하게 엉켜있다

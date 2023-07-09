@@ -23,9 +23,9 @@ public class Member {
 
 # EntityManager
 
-> Entity를 관리하는 역할을 수행하는 클래스
+> Entity 를 관리하는 역할을 수행하는 클래스
 
-* EntityManager 내부의 **Persistence Context**라는 것을 두어 Entity를 관리한다
+* EntityManager 내부의 **Persistence Context**라는 것을 두어 Entity 를 관리한다
 
 ## 영속성 컨텍스트, Persistence Context
 
@@ -34,7 +34,7 @@ public class Member {
 
 > 영속성 컨텍스트는 엔티티를 영구히 저장하는 환경이다.
 
-Persistence Context를 관리하는 모든 **EntityManager**가 초기화 및 종료되지 않는 한 엔티티를 영구히 저장하는 환경
+Persistence Context 를 관리하는 모든 **EntityManager**가 초기화 및 종료되지 않는 한 엔티티를 영구히 저장하는 환경
 
 ## Entity 관리 방법
 
@@ -122,14 +122,14 @@ public class MemberService {
 
 <br>
 
-![img.png](../⚠%20z-Image%20⚠/imgs/EntityManagerFactory.png)
+![img.png](../🔲%20Image%20🔲/리펙토링 이전의 이미지/img5/EntityManagerFactory.png)
 
 * EntityManagerFactory : 여러 스레드가 동시에 접근해도 안전하기 때문에 다른 스레드 간 공유해도 문제가 없다.
 * EntityManager : 여러 스레드가 동시에 접근하면 동시성 문제가 발생하기 때문에 스레드간 공유를 하면 안 된다
 
 <br>
 
-EntityManager는 DB 연결이 필요한 시점까지 커넥션을 얻지 않는다.
+EntityManager 는 DB 연결이 필요한 시점까지 커넥션을 얻지 않는다.
 
 ```
 보통 트랜잭션을 시작할 때 커넥션을 얻는다
@@ -349,7 +349,7 @@ public class Diary {
 
 # criteria by reflection for persistent property
 
-> Criteria를 사용할 때 변수형이 맞지 않아서 발생하는 예외
+> Criteria 를 사용할 때 변수형이 맞지 않아서 발생하는 예외
 
 ```java
 
