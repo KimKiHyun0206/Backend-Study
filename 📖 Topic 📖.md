@@ -39,7 +39,6 @@
 * ~~Write Back Cache~~
 * Partition
 * 데이터베이스 관계
-* 
 
 ### Operate System
 - ~~멀티프로세스와 멀티스레드 차이~~
@@ -47,17 +46,22 @@
 - ~~세마포어와 뮤텍스~~
 - ~~동기 vs 비동기~~
 - ~~concurrency vs parallelism~~
-- 캐시
+- ~~캐시~~
 - ~~스케줄링 기법~~
-- 커널
+- ~~커널~~
 - ~~Critical Section~~
 - ~~RAID~~
 - 시스템 콜
 - 표준 입력(STDIN), 표준 출력(STDOUT), 표준 에러(STDERR)
-- Context Switching
+- Context Switching(문맥 교환)
 - Memory
 - Disk
-- Local Cache
+- ~~Local Cache~~
+- 다양한 운영체제
+  - Window
+  - Linux
+  - Unix
+  - macOS
 
 ### Spring
 - ~~IOC, DI, AOP~~
