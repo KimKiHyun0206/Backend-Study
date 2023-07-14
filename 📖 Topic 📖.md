@@ -14,6 +14,11 @@
 - ~~cast (broadcast, unicast, multicast 등..)~~
 - ~~ipv4 vs ipv6~~
 - ~~http status code~~
+- 웹 서버
+- DB 서버
+- 메일 서버
+- 뉴스 서버
+- 네임 서버
 
 ### Database
 - ~~DB Index~~
