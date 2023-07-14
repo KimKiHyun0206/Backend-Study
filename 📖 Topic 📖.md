@@ -58,7 +58,7 @@
 - Disk
 - ~~Local Cache~~
 - 다양한 운영체제
-  - Window
+  - ~~Window~~
   - Linux
   - Unix
   - macOS
