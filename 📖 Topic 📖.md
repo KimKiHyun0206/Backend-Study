@@ -64,7 +64,7 @@
 - ~~Local Cache~~
 - 다양한 운영체제
   - ~~Window~~
-  - Linux
+  - ~~Linux~~
   - Unix
   - macOS
 
