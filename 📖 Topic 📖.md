@@ -65,8 +65,8 @@
 - 다양한 운영체제
   - ~~Window~~
   - ~~Linux~~
-  - Unix
-  - macOS
+  - ~~Unix~~
+  - ~~macOS~~
 
 ### Spring
 - ~~IOC, DI, AOP~~
