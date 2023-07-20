@@ -2,9 +2,9 @@
 
 > 서버의 위치를 의미하는 https://google.com 같은 URL들은 마치 하나의 문자열 같이 보여도 여러 개의 구성 요소로 이루어져 있다.
 
-| **Protocol** |      **Host**      |  **Path**  |   **Query String**   | **Fragment** |
-|:--------:|:--------------:|:------:|:----------------:|:--------:|
-| https:// | www.google.com | /users | ?sort=asc&page=1 |   #foo   |
+| **Protocol** |    **Host**    | **Path** | **Query String** | **Fragment** |
+|:------------:|:--------------:|:--------:|:----------------:|:------------:|
+|   https://   | www.google.com |  /users  | ?sort=asc&page=1 |     #foo     |
 
 이때 출처는 Protocol과 Host 그리고 포트 번호를 모두 합친 것을 말한다
 
@@ -64,10 +64,10 @@ _교차 출처 리소스 공유_
 
 # 동작 방법
 
-## Simple Requests인 경우
+## Simple Requests 인 경우
 
 <details>
-<summary> Simple Requests란? </summary>
+<summary> Simple Requests 란? </summary>
 
 HTTP 메소드가 다음 중 하나여야 한다
 
@@ -85,7 +85,7 @@ HTTP 메소드가 다음 중 하나여야 한다
 
 <br>
 
-Content-Type이 다음과 같은 경우
+> Content-Type 이 다음과 같은 경우
 
 * application/x-www-form-urlencoded
 * multipart/form-data
@@ -102,10 +102,10 @@ Content-Type이 다음과 같은 경우
 2. 서버의 응답이 왔을 때 브라우저가 요청한 **Origin**과 응답한 헤더 **Access-Control-Request-Headers**의 값을 비교하여 유요한 요청이면 리소스를 응답한다
     1. 만약 유효하지 않은 요청이라면 브라우저에서 이를 막고 에러를 발생시킨다.
 
-## preflight인 경우
+## preflight 인 경우
 
 <details>
-    <summary>preflight란?</summary>
+    <summary>preflight 란?</summary>
 
 `Simple Requests`가 아닌 `Cross-Origin`요청은 모두 preflight 요청을 하게 되는데, 실제 요청을
 보내는 것이 안전한지 확인하기 위해 먼저 `OPTIONS` 메소드를 사용하여 `Cross-Origin HTTP 요청`을 보낸다.
@@ -150,7 +150,7 @@ Content-Type이 다음과 같은 경우
 
 # REST API 와 CORS
 
-> REST API의 리소스가 비 단순 Cross-Origin HTTP 요청을 받는 경우 CORS 지원을 활성화해야 한다
+> REST API 의 리소스가 비 단순 Cross-Origin HTTP 요청을 받는 경우 CORS 지원을 활성화해야 한다
 
 <br>
 
@@ -205,7 +205,7 @@ Cross-Origin HTTP 요청은 단순 요청과 비단순 요청의 두 가지 유�
 
 <br>
 
-단순 Corss-Origin POST 메소드 요청의 경우 해당 리소스로부터 응답에 Access-Control-Allow-Origin 헤더가 포함되어야 한다.
+단순 Cross-Origin POST 메소드 요청의 경우 해당 리소스로부터 응답에 Access-Control-Allow-Origin 헤더가 포함되어야 한다.
 헤더의 키 값은 *(임의의 오리진)으로 설정되거나, 해당 리소스에 대한 액세스가 허용되는 오리진으로 설정된다.
 
 <br>
@@ -236,7 +236,7 @@ public class WebConfig implements WebMvcConfigurer {
 }
 ```
 
-* addAllowedOriginPattern(String originPattern) : Origin을 추가한다
+* addAllowedOriginPattern(String originPattern) : Origin 을 추가한다
 * addAllowedHeader(String allowedHeader) : 허용할 실제 요청 헤더를 추가한다
 * addAllowedMethod(String method) : 허가할 HTTP 메소드를 추가한다
     * @Overload : addAllowedMethod(HttpMethod method)

@@ -15,7 +15,7 @@
 
 ### 기능 특화
 
-* JSP같은 뷰 템플릿은 화면을 렌더링하는 데에 최적화되어 있다
+* JSP 같은 뷰 템플릿은 화면을 렌더링하는 데에 최적화되어 있다
 * 때문에 화면 렌더링만 담당하는 것이 효과적이다
 
 ## Model View Controller
@@ -59,16 +59,16 @@
 DispatcherServlet - FrameworkServlet - HttpServletBean - HttpServlet
 ```
 
-* DispatcherServlet은 HttpServlet을 상속받아 서블릿으로 동작한다
-* 스프링 부투는 DispatcherServlet을 서블릿으로 자동 등록한다
+* DispatcherServlet 은 HttpServlet 을 상속받아 서블릿으로 동작한다
+* 스프링 부투는 DispatcherServlet 을 서블릿으로 자동 등록한다
     * 모든 경로에 대해서 매핑한다
     * 경로가 자세할수록 우선순위가 높다
     * 따라서 기존에 등록한 서블릿도 함께 동작한다
 
 ### 요청 흐름
 
-1. 서블릿이 호출되면 HttpServlet이 제공하는 service()가 호출된다
-2. 스프링 MVC는 DispatcherServlet의 부모인 FrameworkServlet에서 service()를 오버라이드 했다
+1. 서블릿이 호출되면 HttpServlet 이 제공하는 service()가 호출된다
+2. 스프링 MVC 는 DispatcherServlet 의 부모인 FrameworkServlet 에서 service()를 오버라이드 했다
 3. FrameworkServlet.service()를 시작으로 여러 메소드가 호출되면서 **DispatcherServlet.doDispatch()**가 호출된다.
 
 ```java

@@ -1,33 +1,44 @@
-# CORS 성정 시 allowdOrigin 에러 해결 방법
-When allowCredentials is true, allowedOrigins cannot contain the special value "*" since that cannot be set on the "Access-Control-Allow-Origin" response header. To allow credentials to a set of origins, list them explicitly or consider using "allowedOriginPatterns" instead.
+# CORS 성정 시 allowedOrigin 에러 해결 방법
+
+When allowCredentials is true, allowedOrigins cannot contain the special value "*" since that cannot be set on the "
+Access-Control-Allow-Origin" response header. To allow credentials to a set of origins, list them explicitly or consider
+using "allowedOriginPatterns" instead.
 
 
->[스프링 독스](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/cors/CorsConfiguration.html)
+> [스프링 독스](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/cors/CorsConfiguration.html)
+
 ## 해결
-    @Configuration
-    public class CorsConfig {
 
-        @Bean
-        public CorsFilter corsFilter() {
+```java
 
-            UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
-            CorsConfiguration config = new CorsConfiguration();
+@Configuration
+public class CorsConfig {
 
-            config.setAllowCredentials(true);
-            // config.addAllowedOrigin("*");
-            config.addAllowedOriginPattern("*"); // addAllowedOriginPattern("*") 대신 사용
-            config.addAllowedHeader("*");
-            config.addAllowedMethod("*");
-            source.registerCorsConfiguration("/**", config);
+    @Bean
+    public CorsFilter corsFilter() {
 
-            return new CorsFilter(source);
-        }
+        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+        CorsConfiguration config = new CorsConfiguration();
+
+        config.setAllowCredentials(true);
+        // config.addAllowedOrigin("*");
+        config.addAllowedOriginPattern("*"); // addAllowedOriginPattern("*") 대신 사용
+        config.addAllowedHeader("*");
+        config.addAllowedMethod("*");
+        source.registerCorsConfiguration("/**", config);
+
+        return new CorsFilter(source);
     }
+}
+```
+
 이와 같은 코드를 작성한다
-* `allowCredentials`가 true일 때 allowedOrigin에 특수 값인 `*`을 추가할 수 없게 되었다
+
+* `allowCredentials`가 true 일 때 allowedOrigin 에 특수 값인 `*`을 추가할 수 없게 되었다
 * 대신 `allowOriginPatterns`를 사용하면 된다
 
 ## 메소드
+
 * `void addAllowedHeader(String allowedHeader)` : 허용할 요청 헤더를 추가한다
 * `void addAllowedMethod(String method)` : 허용할 HTTP 메소드를 추가한다
 * `void addAllowedMethod(HttpMethod method)`

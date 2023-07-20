@@ -20,7 +20,7 @@
 * HTML 변경시 Servlet 을 다시 컴파일 해야한다.
 
 ```java
-// servlet-url로 요청이 오면 이게 실행된다.
+// servlet-url 로 요청이 오면 이게 실행된다.
 @WebServlet(name = "sampleServlet", urlPatterns = "/servlet-url")
 public class SampleServlet extends HttpServlet {
 
