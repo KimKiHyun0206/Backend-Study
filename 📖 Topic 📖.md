@@ -83,6 +83,9 @@
 - Dispatcher Servlet
 - maven, gradle
 - 라이브러리 vs 프레임워크
+- Java Criteria
+- JPQL
+- JDBC vd JPA
 
 ### Java
 - ~~접근제한자, 생성자, SOLID~~
