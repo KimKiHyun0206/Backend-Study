@@ -14,7 +14,9 @@
 - ~~cast (broadcast, unicast, multicast 등..)~~
 - ~~ipv4 vs ipv6~~
 - ~~http status code~~
-- 웹 서버
+- ~~웹 서버~~
+  - 웹 사이트를 생성하기 위한 다양한 소프트웨어
+  - 웹 서버에 파일을 업로드 하는 방법
 - DB 서버
 - 메일 서버
 - 뉴스 서버
