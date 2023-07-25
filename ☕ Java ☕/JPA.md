@@ -152,6 +152,7 @@ FROM MEMBER M
 - - -
 
 * [JPA](https://dbjh.tistory.com/77)
+* [JPA 시작하기기](https://incheol-jung.gitbook.io/docs/study/jpa/2-jpa)
 
 
 
