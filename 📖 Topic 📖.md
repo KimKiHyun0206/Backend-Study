@@ -100,7 +100,7 @@
 - Jpa 1차 캐시
 - 오버라이딩 vs 오버로딩
 - Java compile 과정
-- java version별 차이점
+- ~~java version별 차이점~~
 - mutable vs immutable
 - 인터페이스와 추상클래스
 - 스네이크, 파스칼, 카멜 케이스
