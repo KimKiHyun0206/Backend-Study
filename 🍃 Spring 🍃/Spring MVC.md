@@ -38,7 +38,7 @@
 
 # Spring MVC
 
-![img.png](../⚠%20z-Image%20⚠/img2/Spring-MVC-Pattern.png)
+![img.png](../🔲%20Image%20🔲/리펙토링 이전의 이미지/img2/Spring-MVC-Pattern.png)
 
 1. Client 로부터 요청이 들어오면 DispatcherServlet 이 호출된다.
 2. DispatcherServlet 은 받은 요청을 HandlerMapping 에게 던져준다. 요청받은 URL 을 분석하여 HandlerMapping 적합한 Controller 를 선택하여 반환한다.
