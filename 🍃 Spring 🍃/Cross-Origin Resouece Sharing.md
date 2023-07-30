@@ -6,7 +6,7 @@
 |:------------:|:--------------:|:--------:|:----------------:|:------------:|
 |   https://   | www.google.com |  /users  | ?sort=asc&page=1 |     #foo     |
 
-이때 출처는 Protocol과 Host 그리고 포트 번호를 모두 합친 것을 말한다
+이때 출처는 Protocol 과 Host 그리고 포트 번호를 모두 합친 것을 말한다
 
 ```
 Origin = Protocol + Host + Port
