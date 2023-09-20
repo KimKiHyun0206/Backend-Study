@@ -35,4 +35,4 @@
 * 높은 지원 하드웨어 사양이 필요함
 
 ---
-*[Oracle 이란](https://velog.io/@alicesykim95/Oracle%EA%B3%BC-MySQL%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90)
+* [Oracle 이란](https://velog.io/@alicesykim95/Oracle%EA%B3%BC-MySQL%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90)
