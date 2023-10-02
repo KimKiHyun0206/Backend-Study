@@ -84,31 +84,32 @@
 @Configuration
 public class AppConfig {
     @Bean
-    public Service serviceSampleOne(){
-        return new Service(algorithmOne, basicAlgorithm);
+    public Service serviceSampleOne() {
+        return new Service(algorithmOne(), basicAlgorithm);
     }
 
-   @Bean
-   public Service serviceSampleTwo(){
-      return new Service(algorithmTwo, basicAlgorithm);
-   }
+    @Bean
+    public Service serviceSampleTwo() {
+        return new Service(algorithmTwo(), basicAlgorithm);
+    }
 
-   @Bean
-   public Algorithm algorithmOne(){
-      return new AlgorithmOne();
-   }
-   
-   @Bean
-   public Algorithm algorithmTwo(){
-      return new AlgorithmTwo();
-   }
+    @Bean
+    public Algorithm algorithmOne() {
+        return new AlgorithmOne();
+    }
 
-   @Bean
-   public BasicAlgorithm basicAlgorithm(){
+    @Bean
+    public Algorithm algorithmTwo() {
+        return new AlgorithmTwo();
+    }
+
+    @Bean
+    public BasicAlgorithm basicAlgorithm() {
         return new BasciAlgorithm();
-   }
+    }
 }
 ```
+
 이와 같이 Configuration 을 작성한 후 코드에서 원하는 빈을 사용할 수 있다
 
 ### 데이터 액세스 프레임워크, Data Access Framework
